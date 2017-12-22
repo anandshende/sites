@@ -1,10 +1,9 @@
 body {
     background: black;
-    color: #ff6262;
-    /* font-family: Junction; */
+    color: #d88e21;
     font-family: 'Amaranth', sans-serif;
-    /* font-style: normal;
-    font-weight: 400; */
+    font-style: normal;
+    font-weight: 400;
 }
 
 .mainPanel {
@@ -39,8 +38,12 @@ body {
     margin-top: 50px;
 }
 
+.last-photo-container {
+    margin-bottom: 30px;
+}
+
 .photo-frame {
-    background: #8f8f8f;
+    background: #b58a99;
     padding: 10px;
     display: table;
     margin: 0 auto;
@@ -50,4 +53,122 @@ body {
 .photo {
     max-width: 100%;
     max-height: 100%;
+}
+
+.tabContainer {
+    display: table;
+    margin: 0 auto;
+}
+
+.tab {
+    float: left;
+    margin-left: 5px;
+    font-size: 13px;
+}
+
+.seperator {
+    float: left;
+    margin-left: 5px; 
+}
+
+.photo-caption {
+    display:  table;
+    margin: auto;
+    margin-top: 3px;
+}
+
+.photo-caption-span {
+    font-size: 20px;
+    color:  #88081f;
+    font-weight: bold;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    background: black;
+    width: 100%;
+    height: 50px;
+}
+
+.sticky > div {
+    position: absolute;
+    width: 100%;
+    text-align: center; 
+}
+
+.clr {
+    clear: both;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+ul > .tab::after {
+    content: '|';
+    margin-left: 5px;
+}
+
+ul > .last-tab::after {
+    content: '';
+    margin-left: unset;
+}
+
+.sticky > div > ul {
+    display: inline-block;
+}
+
+/*
+    mainPanel second-type
+    body third-type
+    body fourth-type
+*/
+
+.second-type {
+    background: #141516;
+    color: #9c9c9c;
+}
+
+.second-type .photo-frame{
+    background: #9c9c9c;
+}
+
+.second-type .photo-caption-span{
+    color: #625d5c;
+}
+
+.third-type {
+    background-image: url('../images/glitter-background.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.third-type .photo-frame{
+    background: #d88e21;
+    box-shadow: 0 4px 8px 0 #d88e21, 0 6px 20px 0 #d88e21;
+}
+
+.third-type .photo-caption-span{
+    color: black;
+}
+
+.fourth-type {
+    /* background-image: url('../images/glitter-background.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+.fourth-type .photo-frame{
+    background: none;
+    box-shadow: 0 4px 8px 0 #d88e21, 0 6px 20px 0 #d88e21;
+}
+
+.fourth-type .photo-caption-span{
+    color: #d88e21;
+    background: black;
 }

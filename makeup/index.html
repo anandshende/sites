@@ -10,9 +10,11 @@
     <link rel="stylesheet" href="./assets/styles/index.css">
     <!-- <link rel="stylesheet" href="./assets/fonts/junction.css"> -->
     <link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet">
+    <script src="./assets/scripts/vendor/jquery-3.2.1.min.js"></script>
+    <script src="./assets/scripts/vendor/lazyload.js"></script>
 </head>
 
-<body>
+<body class="fourth-type">
     <div class="mainPanel">
         <div class="topbar">
             <div class="heading">
@@ -22,37 +24,68 @@
 
         <hr class="horizontal-line">
 
+        <div class="tabContainer" id="tabContainer">
+            <div class="tabInnerContainer">
+                <ul>
+                    <li class="tab">HOME</li>
+                    <li class="tab">PORTFOLIO</li>
+                    <li class="tab">LOOK DESIGNING</li>
+                    <li class="tab">VIDEOS</li>
+                    <li class="tab last-tab">ABOUT</li>
+                    <li class="clr"></li>
+                </ul>
+            </div>
+        </div>
+
+        <hr class="horizontal-line">
+
         <div class="photo-container">
             <div class="photo-frame">
-                <img class="photo" src="../assets/image5.jpg" alt="">
+                <img class="photo lazyload" data-src="./assets/images/image5.jpg" src="./assets/images/image5.jpg" alt="">
+                <div class="photo-caption">
+                    <span class="photo-caption-span">BRIDAL</span>
+                </div>
             </div>
         </div>
 
         <div class="photo-container">
             <div class="photo-frame">
-                <img class="photo" src="../assets/image1.jpg" alt="">
+                <img class="photo lazyload" data-src="./assets/images/image1.jpg" src="./assets/images/image1.jpg" alt="">
+                <div class="photo-caption">
+                    <span class="photo-caption-span">PARTY</span>
+                </div>
             </div>
         </div>
 
         <div class="photo-container">
             <div class="photo-frame">
-                <img class="photo" src="../assets/image2.jpg" alt="">
+                <img class="photo lazyload" data-src="./assets/images/image2.jpg" src='./assets/images/image2.jpg' alt="">
+                <div class="photo-caption">
+                    <span class="photo-caption-span">MAKEUP</span>
+                </div>
             </div>
         </div>
 
         <div class="photo-container">
             <div class="photo-frame">
-                <img class="photo" src="../assets/image3.jpg" alt="">
+                <img class="photo lazyload" data-src="./assets/images/image3.jpg" src="./assets/images/image3.jpg" alt="">
+                <div class="photo-caption">
+                    <span class="photo-caption-span">GALLERY</span>
+                </div>
             </div>
         </div>
 
-        <div class="photo-container">
+        <div class="photo-container last-photo-container">
             <div class="photo-frame">
-                <img class="photo" src="../assets/image4.jpg" alt="">
+                <img class="photo lazyload" data-src="./assets/images/image4.jpg" src="./assets/images/image4.jpg" alt="">
+                <div class="photo-caption">
+                    <span class="photo-caption-span">SOMETHING</span>
+                </div>
             </div>
         </div>
 
     </div>
+    <script src="./assets/scripts/index.js"></script>
 </body>
 
 </html>
